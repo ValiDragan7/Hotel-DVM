@@ -1,0 +1,101 @@
+.precarousel-div{
+    .precarusel-text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #carousel-div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;  
+        .carousel-indicators li {
+            list-style-type: none;
+          }
+        .carousel-item{
+            img{
+                border-radius: 25%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .precarousel-div{
+        padding: 4rem 0 1rem;
+        .precarusel-text{
+            h3{
+                font-size: 2.5rem;
+                padding: 0 0 3rem;
+            }
+            p{
+                font-size: 1.5rem;
+                padding: 0 0 5rem;
+                width: 60%;
+            }
+        }
+        #carousel-div{
+            width: 80%;
+            .carousel-item{
+                img{
+                    max-height: 850px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+    .precarousel-div{
+        padding: 0 0 4rem;
+        .precarusel-text{
+            h3{
+                font-size: 2rem;
+                padding: 0 0 2rem;
+            }
+            p{
+                font-size: 1rem;
+                padding: 0 0 2rem;
+                width: 60%;
+            }
+        }
+        #carousel-div{
+            width: 90%;
+            .carousel-item{
+                img{
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .precarousel-div{
+        padding: 0 0 1rem;
+        .precarusel-text{
+            h3{
+                font-size: 1.5rem;
+                padding: 0 0 1rem;
+            }
+            p{
+                font-size: 1rem;
+                padding: 0 0 2rem;
+                width: 60%;
+            }
+        }
+        #carousel-div{
+            width: 95%;
+            .carousel-item{
+                img{
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

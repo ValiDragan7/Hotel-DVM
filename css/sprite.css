@@ -1,0 +1,252 @@
+header {
+  position: fixed;
+  width: 100%;
+  padding: 0 2rem;
+  z-index: 1;
+}
+header .nav {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav li {
+  list-style: none;
+}
+header .nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1rem;
+}
+header .nav a:hover {
+  color: black;
+}
+header .nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  gap: 2rem;
+  transition: 1s ease-in;
+}
+header .nav .nav-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgb(1, 1, 1);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+header .nav .nav-button:hover {
+  transform: scale(1.05);
+  background-color: rgb(255, 255, 255);
+  color: rgb(1, 1, 1);
+}
+header .nav .nav-button:active {
+  transform: scale(0.95);
+  background-color: rgb(255, 255, 255);
+  color: rgb(1, 1, 1);
+}
+header .nav .burger {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.visible {
+  left: 100px;
+}
+
+@media (min-width: 1024px) {
+  header .nav .burger {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  header {
+    background-color: rgba(1, 1, 1, 0.8);
+  }
+  header .nav .nav-links {
+    z-index: 100;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(1, 1, 1, 0.7);
+    top: -100%;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10% 10%;
+    padding: 10% 30%;
+    text-align: center;
+    transform: scaleY(0.1);
+    display: none;
+  }
+  header .nav .nav-button {
+    transform: scale(0.8);
+  }
+}
+footer {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: right;
+  gap: 20%;
+}
+footer i {
+  color: rgb(255, 255, 255);
+}
+footer a:hover {
+  color: black;
+}
+footer hr {
+  width: 100%;
+  border-width: 0.3rem;
+  border-color: rgb(255, 255, 255);
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 4rem 0;
+  }
+  footer h3 {
+    padding-bottom: 3rem;
+  }
+  footer .date-contact {
+    width: 120%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .date-contact .email, footer .date-contact .phone, footer .date-contact .location {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+  }
+  footer .about-us {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer .about-us .icons {
+    padding-top: 10px;
+    display: flex;
+    gap: 20%;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    padding: 4rem 0;
+  }
+  footer h3 {
+    padding-bottom: 1rem;
+  }
+  footer .date-contact {
+    width: 120%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .date-contact .email, footer .date-contact .phone, footer .date-contact .location {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+  }
+  footer .about-us {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .about-us .icons {
+    display: flex;
+    gap: 15%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 4rem 0;
+    flex-direction: column;
+    gap: 60px;
+  }
+  footer hr {
+    display: block;
+  }
+  footer h3 {
+    padding-bottom: 1rem;
+  }
+  footer .date-contact {
+    width: 120%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .date-contact .email, footer .date-contact .phone, footer .date-contact .location {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+  }
+  footer .about-us {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .about-us .icons {
+    display: flex;
+    gap: 15%;
+    font-size: 1.7rem;
+  }
+}
+body {
+  background-color: rgb(149, 107, 107);
+}
+
+.jumbotron {
+  background-color: rgb(207, 167, 167);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jumbotron p {
+  padding: 1rem 0;
+}
+
+.animation {
+  width: 302px;
+  height: 205px;
+  background: url(/images/dogspritesheet.png);
+  animation: xcoin 0.5s steps(21) infinite;
+}
+
+@keyframes xcoin {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -6342px;
+  }
+}/*# sourceMappingURL=sprite.css.map */

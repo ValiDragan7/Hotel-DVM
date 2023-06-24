@@ -1,0 +1,48 @@
+
+
+@media (min-width:1024px) {
+    .servicii{
+        .card:hover{
+            transform: scale(1.1);
+        }
+        padding: 10rem 0 12rem;
+        h1{
+            font-size: 4rem;
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+    .servicii{
+        padding: 2rem 0 10rem;
+        h1{
+            font-size: 4rem;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .servicii{
+        padding: 2rem 0 10rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        .card{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+    }
+}

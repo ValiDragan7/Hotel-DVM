@@ -1,0 +1,126 @@
+@import "properties";
+footer{
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: right;
+    gap: 20%;
+    i{
+        color: $title-color;
+    }
+    a:hover{
+        color: black;
+    }
+    hr{
+        width: 100%;
+        border-width: 0.3rem;
+        border-color: $title-color;
+        display: none;
+    }
+}
+
+@media (min-width:1024px) {
+    footer{
+        padding: 4rem 0;
+        h3{
+            padding-bottom: 3rem;
+        }
+        .date-contact{
+            width: 120%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .email,.phone,.location{
+                display: flex;
+                gap: 20px;
+                font-size: 1.2rem;
+            }
+           
+        }
+        .about-us{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .icons{
+                padding-top: 10px;
+                display: flex;
+                gap: 20%;
+                font-size: 2.5rem;
+            }
+        }
+    }
+ }
+ 
+ @media (min-width:768px) and (max-width: 1023px) {
+    footer{
+        padding: 4rem 0;
+        h3{
+            padding-bottom: 1rem;
+        }
+        .date-contact{
+            width: 120%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .email,.phone,.location{
+                display: flex;
+                gap: 10px;
+                font-size: 1rem;
+            }
+        }
+        .about-us{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            .icons{
+                display: flex;
+                gap: 15%;
+                font-size: 2rem;
+            }
+        }
+    }
+ }
+ 
+ @media (max-width:767px) {
+    footer{
+        padding: 4rem 0;
+        flex-direction: column;
+        gap: 60px;
+        hr{
+            display: block;
+        }
+        h3{
+            padding-bottom: 1rem;
+        }
+        .date-contact{
+            width: 120%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .email,.phone,.location{
+                display: flex;
+                gap: 10px;
+                font-size: 1rem;
+            }
+            
+        }
+        .about-us{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .icons{
+                display: flex;
+                gap: 15%;
+                font-size: 1.7rem;
+            }
+        }
+    }
+ }

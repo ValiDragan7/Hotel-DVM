@@ -1,0 +1,58 @@
+@import 'nav',"footer","properties";
+
+body {
+    background-color: #053463b2;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contract-card {
+  background-color: #ffffff7c;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.281);
+}
+.contract-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contract-footer {
+  margin-top: 30px;
+  text-align: right;
+  font-style: italic;
+}
+p{
+  text-align: left;
+}
+.button{
+  color: $title-color;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: $trblack;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+.button:hover{
+  background-color: $title-color;
+  color: $trblack;
+  text-decoration: none;
+}
+.button:active{
+  transform: scale(0.95);
+  background-color: $title-color;
+  color: $trblack;
+}

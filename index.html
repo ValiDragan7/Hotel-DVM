@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect Web-Hotel DVM</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&ampfamily=Montserrat&ampdisplay=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30c7ece301.js" crossorigin="anonymous"></script>
+    <!-- <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome/css/solid.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="burger">
+              <i class="fa-solid fa-bars burger"></i>
+            </div>
+            <ul id="nav-links" class="nav-links">
+              <li><a href="#carousel">Camere</a></li>
+              <li><a href="#servicii">Servicii</a></li>
+              <li><a href="#evenimente">Evenimente</a></li>
+              <li><a href="#footer">Despre Website</a></li>
+              <li><a href="/gallery.html">Galerie</a></li>
+            </ul>
+            <div class="nav-button">
+              <a class="button" href="/form.html">INCHIRIAZA ACUM</a> 
+            </div>
+        </nav>
+    </header>
+    <div class="title">
+      <div class="logo">
+        <svg style="color: rgb(76, 76, 109);" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> 
+          <path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4" fill="#4c4c6d"></path> 
+          <path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3" fill="#4c4c6d"></path> 
+          <path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35z" fill="#4c4c6d"></path> 
+          <path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14" fill="green"></path> 
+        </svg>
+      </div>
+        <h1>Hotel DVM</h1>
+        <h3>Unde eleganța întâlnește confortul</h3>
+      <div class="overlay"></div>
+    </div>
+    <div class="prezentare">
+        <div> 
+            <h3>Bun venit la Hotelul DVM!</h3>
+            <p>Sunteți în căutarea unei experiențe de neuitat la malul mării? Atunci ați ajuns la locul potrivit! Hotelul DVM este o destinație de top pentru vacanțe de relaxare și distracție pe litoralul magnific al mării.</p>
+        </div>
+        <img src="/images/hotel-prezentare.jpg" alt="imagine-prezentare">
+    </div>
+    <div id="carousel" class="precarousel-div">
+        <div class="precarusel-text">
+          <h3>40 de camere confortabile, spațioase și aproape de plajă</h3>
+          <p>Cele 3 tipuri de camera: Single, Double si Suite sunt modul perfect de a-ți petrece vacanța</p>
+        </div>   
+        <div id="carousel-div" class="carousel slide" data-bs-ride="carousel" data-interval="10000">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carousel-div" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carousel-div" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carousel-div" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/images/single-room.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Camera de tip single</h5>
+                  <p>Bucurați-vă de un pat confortabil și o atmosferă plăcută, în care vă puteți recăpăta energiile și puteți găsi liniștea de care aveți nevoie. Fie că sunteți într-o călătorie de afaceri sau în vacanță, veți găsi un loc prietenos și relaxant în camera noastră single.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/images/double-room.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Camera de tip double</h5>
+                  <p>Descoperiți confortul și eleganța în camera noastră dublă. Cu designul său contemporan și dotările moderne, această cameră vă oferă o oază de relaxare și liniște.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/images/suite-room.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Camera de tip Suite</h5>
+                  <p>Suite-ul nostru combină elegantul și confortul într-un design sofisticat. Cu un living spațios și zonă de luat masa separată, veți avea suficient loc pentru a vă relaxa și a vă socializa într-un cadru intim și exclusiv.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-div" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-div" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div id="servicii" class="servicii">
+      <h1 class="text-center my-5">Quality of Life</h1>
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card h-100" style="max-width: 23rem;">
+              <img src="/images/spa-image.jpg" alt="spa-image" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Spa & Saună</h5>
+                <p class="card-text">Pentru a vă relaxa și a vă distra, vă punem la dispoziție un centru spa si saună cu o gamă largă de tratamente și masaje.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card h-100" style="max-width: 23rem;">
+              <img src="/images/pool-image.jpg" alt="pool-image" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Pișcină & Sală de fitness</h5>
+                <p class="card-text">Bucurați-vă de o experiență completă de bunăstare și fitness în incinta hotelului nostru, unde vă așteaptă atât o piscină interioară relaxantă, cât și o sală de fitness modernă.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card h-100" style="max-width: 23rem;">
+              <img src="/images/restaurant-image.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Restaurant</h5>
+                <p class="card-text">Vă invităm să vă bucurați de o experiență culinară deosebită în atmosfera noastră rafinată și primitoare. Meniul nostru variat și creativ satisface cele mai exigente gusturi, aducându-vă preparate autentice și inovatoare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="evenimente" class="sala-evenimente">
+      <h1>Sala de evenimente</h1>
+      <p>Bine ați venit în sala noastră de evenimente exclusivă și elegantă, situată în cadrul hotelului nostru. Această sală este locul perfect pentru a găzdui evenimente speciale, de la nunți și recepții, până la conferințe și întâlniri de afaceri.
+        Cu o capacitate generoasă și un design impresionant, sala noastră de evenimente vă oferă un cadru rafinat și adaptabil pentru a satisface orice cerințe. Fie că planificați un eveniment intim sau unul de amploare, personalul nostru experimentat va lucra alături de dvs. pentru a vă asigura că fiecare detaliu este impecabil.</p>
+      <div class="overlay-2"></div>
+    </div>
+    <footer>
+      <div class="contact">   
+        <h3>Date de contact</h3>
+          <div class="date-contact">
+            <div class="email">
+              <i class="fa-solid fa-envelope"></i>
+              <label >dvmhotel@business.com</label>
+            </div>
+            <div class="phone">
+              <i class="fa-solid fa-phone"></i>
+              <label >+40799999999</label>
+            </div>
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>
+              <label>Stada Unirii 11, 900524</label>
+            </div>
+        </div> 
+      </div>
+      <hr>
+      <div id="footer" class="about-us">
+        <h3>Despre Website</h3>
+        <p>Acest proiect a fost creat de către Drăgan Valentin-Mihai și Ghioc Mihai Bogdan, studenți la Facultatea de Informatică, din cadrul Universității Ovidius,Constanța. Tehnologii folosite: HTML, CSS, Javascript, Bootstrap, JQuery, XML. Unde puteți să ne găsiți:</p>
+        <div class="icons">
+          <a href="https://github.com/ValiDragan7"><i style="color: #0d0da389;" class="fa-brands fa-github"></i></a>
+          <a href="https://ro-ro.facebook.com/valentin.mihaidragan"><i style="color: #0d0da389;" class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/draganvalentinnn/"><i style="color: #0d0da389;" class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="icons">
+          <a href=""><i style="color: #5f0e0ea4;" class="fa-brands fa-github"></i></a>
+          <a href=""><i style="color: #5f0e0ea4;"  class="fa-brands fa-facebook"></i></a>
+          <a href=""><i style="color: #5f0e0ea4;"  class="fa-brands fa-instagram"></i></a>
+          <a href=""><i style="color: #5f0e0ea4;" class="fa-brands fa-twitter"></i></a>
+        </div>  
+      </div>
+    </footer>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="/js/navscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>

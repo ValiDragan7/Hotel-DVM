@@ -1,0 +1,9 @@
+<Contract>
+  <Nume>${nume}</Nume>
+  <Prenume>${prenume}</Prenume>
+  <Email>${email}</Email>
+  <Camera>${camera}</Camera>
+  <MetodaPlata>
+    <Optiune>${metodaPlata}</Optiune>
+  </MetodaPlata>
+</Contract>

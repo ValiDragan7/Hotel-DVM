@@ -1,0 +1,17 @@
+@import 'nav',"properties",'title','prezentare','carusel','servicii','sala_evenimente','footer';
+
+body{
+    margin: 0;
+    box-sizing: border-box; 
+    color: $title-color;
+    background-color: $sunset-dark;
+    font-family: $regular-font;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $title-font;
+}
+
+.visible{
+    display:flex;
+    transform: scaleY(1);
+}

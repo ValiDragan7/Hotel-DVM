@@ -1,0 +1,50 @@
+@import 'nav',"footer";
+
+body{
+    background-color: rgba(61, 42, 0, 0.795);
+}
+.container {
+  margin-top: 10%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.img-fluid {
+  box-shadow: 0 2px 8px rgb(66, 66, 66); 
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+img:hover{
+  transform: scale(1.1);
+}
+.title{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  h1{
+    padding-top: 5rem;
+    font-size: 6rem;
+  }
+}
+
+.recenzie{
+  color: white;
+  background-color: #523801;
+  padding: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  img{
+    border-radius: 100%;
+    max-width: 100rem;
+  }
+  h1{
+    padding-top: 40px;
+  }
+}
